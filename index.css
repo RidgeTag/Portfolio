@@ -1,3 +1,4 @@
+/* glitch animation for index.html */
 body {
     background: black;
     font-family: "Oswald", sans-serif;
@@ -16,7 +17,7 @@ body {
     position: relative;
     font-size: 9vw;
     // margin: 70px 200px;
-    animation: glitch 5s 5s infinite;
+    animation: glitch 2s 4s infinite;
   }
   
   .glitch::before {
@@ -135,4 +136,3 @@ body {
     }
   }
 
-  
