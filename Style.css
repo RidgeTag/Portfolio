@@ -1,24 +1,33 @@
 body {
-  margin:0;
-  padding:0;
+  margin:auto;
+  padding:auto;
   background:#ccc;
   font-family: 'Roboto Condensed', sans-serif;
 
 }
+//centre alignment
+.center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+  vertical-align: middle;
+}
 
 ul {
-  position:static;
+  position:relative;
 
   transform:translate(-50%, -50%);
   display:contents;
-  align-content: center;
-  margin:auto;
-
+  align-self: center;
+  justify-content: center;
 }
 
 ul li {
   list-style:none;
-  margin: 50px 870px;
+  padding: 10px;
+  justify-content: center;
+
 }
 
 ul li a .fa {
@@ -41,7 +50,7 @@ ul li a span {
 
 ul li a {
   text-decoration: none;
-  display:absolute;
+
   display:flex;
   width:210px;
   height:80px;
@@ -65,7 +74,9 @@ ul li a:before {
 }
 ul li a:after {
   content: '';
+  margin: auto;
   position: absolute;
+  justify-content: center;
   bottom:-20px;
   left:-10px;
   height:20px;
@@ -643,4 +654,29 @@ div.highlightTextIn a:before
 {
     transform: scale(1.2);
 } 
+
+/* responsive */
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+/* Media Queries: computer laptop/desktop */
+@media screen and (max-width: 1080px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: iphone */
+@media screen and (max-width: 1284px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
 
