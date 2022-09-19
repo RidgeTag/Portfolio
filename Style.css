@@ -7,18 +7,18 @@ body {
 }
 
 ul {
-  position:absolute;
+  position:static;
 
   transform:translate(-50%, -50%);
   display:contents;
-  align-items:flex-start;
+  align-content: center;
   margin:auto;
 
 }
 
 ul li {
   list-style:none;
-  margin:0 5px;
+  margin: 50px 870px;
 }
 
 ul li a .fa {
@@ -42,7 +42,7 @@ ul li a span {
 ul li a {
   text-decoration: none;
   display:absolute;
-  display:block;
+  display:flex;
   width:210px;
   height:80px;
   background: #fff;
@@ -110,7 +110,7 @@ ul li:hover:nth-child(2) a:after{
   background: #53b9e0;
 }
 
-/* Google Plus 
+/* Google Plus */ 
 ul li:hover:nth-child(3) a{
   background: #dd4b39;
 }
@@ -120,54 +120,72 @@ ul li:hover:nth-child(3) a:before{
 ul li:hover:nth-child(3) a:after{
   background: #e66a5a;
 } 
-*/
 
 /* Instagram */
-ul li:hover:nth-child(3) a{
+ul li:hover:nth-child(4) a{
   background: #e4405f;
 }
-ul li:hover:nth-child(3) a:before{
+ul li:hover:nth-child(4) a:before{
   background: #d81c3f;
 }
-ul li:hover:nth-child() a:after{
+ul li:hover:nth-child(4) a:after{
   background: #e46880;
 }
-
-/* contact form */ 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+/* back home */
+ul li:hover:nth-child(5) a{
+  background: #d800d8;
+}
+ul li:hover:nth-child(5) a:before{
+  background: #8400ff;
+}
+ul li:hover:nth-child(5) a:after{
+  background: #6802c7;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+h1{
+  background-color: rgb(128, 74, 255);
+  color: lighten($primary-color, 10%);
+  padding: 40px;
+  margin: 0 0 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  small{
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: 10px;
+    color: lighten($primary-color, 10%);
+  }
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+/*follow me template*/
+.made-with-love{
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+  i{
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
-
 /* ---------------------------------------- */
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
@@ -225,7 +243,7 @@ div.container a
 
 .purple
 {
-    background: #673ab7;
+    background: rgb(128, 74, 255);
 }
 
 
@@ -625,3 +643,4 @@ div.highlightTextIn a:before
 {
     transform: scale(1.2);
 } 
+
